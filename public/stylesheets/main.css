@@ -173,9 +173,8 @@ img {
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .column {
-    display: hidden;
-    width: 280px;
+  .columns {
+    display: none;
   }
 
   .link {
