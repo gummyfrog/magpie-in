@@ -210,4 +210,16 @@ img {
     height: 300px;
   }
 
+  .hangingPlant2 {
+    height: 200px;
+  }
+
+  .hangingPlant3 {
+    height: 280px;
+  }
+
+  .ferns {
+    display: none;
+  }
+
  }
