@@ -173,8 +173,9 @@ img {
 
 
 @media (min-width: 320px) and (max-width: 480px) {
-  .columns {
-    display: none;
+  .column {
+
+    width: 200px;
   }
 
   .link {
@@ -219,6 +220,10 @@ img {
   }
 
   .ferns {
+    display: none;
+  }
+
+  .sheep {
     display: none;
   }
 
