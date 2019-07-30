@@ -1,0 +1,174 @@
+body {
+  padding: 20px;
+  font-family: 'Caveat', cursive;
+  background-color: white;
+  max-width: 100vw;
+  overflow-x: hidden;
+  opacity: 0;
+}
+
+.load {
+  opacity: 1;
+}
+
+
+h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 65px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: -22px;
+}
+
+
+
+h3 {
+  font-size: 15px;
+  text-align: center;
+  margin: 0;
+}
+
+.content {
+  margin: auto;
+  width: 80%;
+}
+
+.contenthead {
+  width: 100%;
+  margin-bottom: 30px; 
+}
+
+.columns { 
+  margin-top: -50px; 
+  transition: 0.2s ease;
+}
+
+.column {
+  position: absolute;
+  width: 330px;
+  height: 140%;
+  background-size: 330px;
+  background-image: url('/images/col2.png');
+  z-index: -2;
+}
+
+.right { right: -6%; }
+
+.left { left: -6%; }
+
+.flaircontainer {
+}
+
+.flaircontainer img { position: absolute; }
+
+.hangingPlant1 {
+  left: -5%;
+  height: 655px;
+  width: auto;
+  mix-blend-mode: multiply;
+}
+
+.hangingPlant2 {
+  right: 5%;
+  height: 370px;
+  width: 230px;
+}
+
+.hangingPlant3 {
+  margin: auto;
+  top: -50px;
+  left: 20%;
+  height: 350px;
+  width: auto;
+}
+
+.ferns {
+  bottom: -220px;
+  right: 0%;
+  height: 450px;
+  width: 400px;
+}
+
+.wolf {
+  left: 45%;
+  top: 3px;
+  position: absolute;
+  height: 50px;
+  width: auto;
+}
+
+.serpent {
+  bottom: 0%;
+  left: 10%;
+  height: 450px;
+  width: auto;
+}
+
+.sheep {
+  top: 0%;
+  left: 3%;
+  height: 400px;
+  width: auto;
+}
+
+.bookcontainer {
+  margin-top: 60px;
+  width: 100%;
+  height: 20%;
+}
+
+.book {
+  display: block;
+  margin: auto !important;
+  width: auto;
+  height: 350px;  
+  position: relative;
+
+  transform-style: preserve-3d;
+  transition: 0s;
+}
+
+.linkcontainer {
+  margin-top: 20%;
+  width: 100%;
+}
+
+.link {
+  width: 30%;
+  height: auto;
+  display: block;
+  margin: auto;
+
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 2px;
+  transition: 2s, ease;
+}
+
+
+a {
+  font-size: 26px;
+  font-family: 'Beth Ellen', cursive;
+  color: black;
+  position: relative;s
+  top:20%; 
+}
+
+img {
+  transition: 1.2s ease;
+}
+
+ @media only screen and (max-width: 1200px) {
+  img:not(.book) {
+    opacity: 0.1;
+  }
+  .link {
+    margin-bottom: 20px;
+  }
+ }
+
+ @media only screen and (max-width: 700px) {
+  .columns {
+    opacity: 0.03;
+  }
+ }

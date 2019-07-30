@@ -1,0 +1,39 @@
+doctype
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/main.css')
+		link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Beth+Ellen|Caveat|Satisfy&display=swap")
+
+	body
+		div.columns
+			div.column.left.parallax(parallax = 0.2)
+			div.column.right.parallax(parallax = 0.2)
+
+		div.flaircontainer
+			img.hangingPlant3.parallax(src="/images/hanging4.png" style="right:-50%" parallax = 0.5)
+			img.ferns.parallax(src="/images/ferns.png" style = "left:-5%" parallax = 0.6)
+			img.ferns.parallax(src="/images/ferns.png" style = "right:-1%; bottom: -30px" parallax = 0.6)
+			img.serpent.parallax(src="/images/serpent.png" parallax = 0.3)
+			img.sheep.parallax(src="/images/sheep.png" parallax = 0.2)
+
+		div.content
+			div.contenthead.parallax(parallax = 0.7)
+				img.wolf(src="/images/wolf.png")
+				h1 Mind Place
+				h3 by Amelia Conley
+				div.linkcontainer(style="margin-top: 0px")
+					div.link
+						a(href="/") Home
+					div.link
+						a(href="https://google.com") Music
+			div.bookcontainer
+				a(href="https://www.amazon.com/Magpie-Inn-Dinner-Amelia-Conley/dp/1080059946")
+					img.book.js-tilt(data-tilt src="/images/bookcover.jpeg")
+
+
+	
+	footer
+		script(src="https://code.jquery.com/jquery-3.0.0.min.js")
+		script(src="/javascripts/parallax.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js")
+		script(src="/javascripts/booktilt.js")

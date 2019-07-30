@@ -1,0 +1,35 @@
+doctype
+html
+	head
+		link(rel='stylesheet', href='/stylesheets/main.css')
+		link(rel='stylesheet' href="https://fonts.googleapis.com/css?family=Beth+Ellen|Caveat|Satisfy&display=swap")
+
+	body
+		div.columns
+			div.column.left.parallax(parallax = 0.5)
+			div.column.right.parallax(parallax = 0.5)
+
+		div.flaircontainer
+			img.hangingPlant2.parallax(src="/images/hanging3.png" parallax = 1.5)
+			img.hangingPlant3.parallax(src="/images/hanging4.png" parallax = 1.1)
+			img.hangingPlant1.parallax(src="/images/hanging1.png" parallax = 2.5)
+			img.ferns.parallax(src="/images/ferns.png" parallax= 0.3)
+
+		div.content
+			div.contenthead.parallax(parallax = 3.5)
+				img.wolf(src="/images/wolf.png")
+				h1 Mind Place
+				h3 by Amelia Conley
+
+			div.linkcontainer
+				div.link
+					a(href="/magpie") The Magpie Inn
+				div.link
+					a(href="https://google.com") Music
+
+
+
+	
+	footer
+		script(src="https://code.jquery.com/jquery-3.0.0.min.js")
+		script(src="/javascripts/parallax.js")
