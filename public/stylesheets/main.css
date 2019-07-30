@@ -172,3 +172,12 @@ img {
     opacity: 0.03;
   }
  }
+
+
+ @media screen and (orientation:portrait) {
+   .column {
+    opacity: height: 50%;
+  }
+
+
+ }
