@@ -6,6 +6,7 @@ body {
   overflow-x: hidden;
   opacity: 0;
   transition: 1.2s;
+  margin: 0;
 }
 
 .load {
@@ -26,6 +27,12 @@ h3 {
   margin: 0;
 }
 
+p {
+  text-align: center;
+  font-size: 25px;
+}
+
+
 .content {
   margin: auto;
   width: 80%;
@@ -37,14 +44,15 @@ h3 {
 }
 
 .columns { 
-  margin-top: -50px; 
+  height: 100%;
   transition: 0.2s ease;
 }
 
 .column {
+  margin-top: -50px; 
   position: absolute;
   width: 330px;
-  height: 140%;
+  height: 150%;
   background-size: 330px;
   background-image: url('/images/col2.png');
   z-index: -2;
@@ -60,8 +68,9 @@ h3 {
 .flaircontainer img { position: absolute; }
 
 .hangingPlant1 {
+  top: -10px;
   left: -5%;
-  height: 655px;
+  height: 565px;
   width: auto;
   mix-blend-mode: multiply;
 }
@@ -95,35 +104,25 @@ h3 {
   width: auto;
 }
 
-.serpent {
-  bottom: 0%;
-  left: 10%;
-  height: 450px;
-  width: auto;
-}
-
-.sheep {
-  top: 0%;
-  left: 3%;
-  height: 400px;
-  width: auto;
-}
-
 .bookcontainer {
   margin-top: 60px;
-  width: 100%;
+  margin: auto;
+  width: 50%;
   height: 20%;
 }
 
-.book {
-  display: block;
-  margin: auto !important;
-  width: auto;
-  height: 350px;  
-  position: relative;
+.bookleft {
+  width: 50%;
+  float:left;
+  overflow: auto;
+  word-wrap: break-word;
+}
 
-  transform-style: preserve-3d;
-  transition: 0s;
+.bookright {
+  width: 50%;
+  float:right;
+  overflow: auto;
+  word-wrap: break-word;
 }
 
 .linkcontainer {
@@ -132,7 +131,7 @@ h3 {
 }
 
 .link {
-  width: 30%;
+  width: 100%;
   height: auto;
   display: block;
   margin: auto;
@@ -155,8 +154,9 @@ img {
   transition: 1.2s ease;
 }
 
- @media only screen and (max-width: 1200px) {
-  img:not(.book) {
+
+@media only screen and (max-width: 1100px) {
+  img:not(#magpie) {
     opacity: 0.1;
   }
   .link {
@@ -164,7 +164,7 @@ img {
   }
  }
 
- @media only screen and (max-width: 700px) {
+ @media only screen and (max-width: 800px) {
   .columns {
     opacity: 0.03;
   }
@@ -174,13 +174,7 @@ img {
 
 @media (min-width: 320px) and (max-width: 480px) {
   .column {
-
     width: 200px;
-  }
-
-  .link {
-    width: 100%;
-    margin-bottom: 0;
   }
 
   .contenthead {
@@ -203,9 +197,10 @@ img {
   }
 
   body {
-    padding: 12px;
-    overflow-y: hidden;
-  }
+    width: 100%;
+    padding: 0;
+/*    overflow-y: hidden;
+*/  }
 
   .hangingPlant1 {
     height: 300px;

@@ -12,10 +12,7 @@ html
 
 		div.flaircontainer
 			img.hangingPlant3.parallax(src="/images/hanging4.png" style="right:-50%" parallax = 0.5)
-			img.ferns.parallax(src="/images/ferns.png" style = "left:-5%" parallax = 0.6)
-			img.ferns.parallax(src="/images/ferns.png" style = "right:-1%; bottom: -30px" parallax = 0.6)
-			img.serpent.parallax(src="/images/serpent.png" parallax = 0.3)
-			img.sheep.parallax(src="/images/sheep.png" parallax = 0.2)
+			img.ferns.parallax(src="/images/ferns.png" style = "right:-4%; bottom: -200px" parallax = 0.6)
 
 		div.content
 			div.contenthead.parallax(parallax = 0.7)
@@ -27,10 +24,18 @@ html
 						a(href="/") Home
 					div.link
 						a(href="https://google.com") Music
-			div.bookcontainer
-				a(href="https://www.amazon.com/Magpie-Inn-Dinner-Amelia-Conley/dp/1080059946")
-					img.book.js-tilt(data-tilt src="/images/bookcover.jpeg")
 
+
+			div.bookcontainer
+				img#magpie.parallax(src="/images/magpie.png" style="width: 40%; height: auto; margin: auto; display: inherit" parallax = 4)
+
+				p.
+					Magpie Inn: Bed & Dinner is a whimsical murder mystery about a disgruntled detective who stumbles upon an inn inhabiting fantastical creatures of all shapes and sizes. 
+				p.
+					There, he is assigned to solve an unfortunate murder, encountering many bizarre and lovable characters along the way, such as: a fish-woman, a multi-lingual cat, an inter-dimensional meditator, a suspicious sheep and many more!
+
+				a(href="https://www.amazon.com/Magpie-Inn-Dinner-Amelia-Conley/dp/1080059946")
+					h1(style="font-size: 38px") Buy the book.
 
 	
 	footer
